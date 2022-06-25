@@ -26,7 +26,7 @@ class Post(models.Model):
         upload_to='posts/', null=True, blank=True)
 
     class Meta:
-        ordering = ('author',)
+        ordering = ('pub_date',)
 
     def __str__(self):
         return self.text
