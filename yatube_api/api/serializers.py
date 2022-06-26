@@ -44,10 +44,10 @@ class FollowSerializer(serializers.ModelSerializer):
         fields = '__all__'
         validators = [
             serializers.UniqueTogetherValidator(
-                queryset=Follow.objects.all(),
+                queryset=Follow.objects.filter(),
                 fields=('user', 'following'),
                 message='Подписаться на автора можно только один раз!'
-            )
+            ),
         ]
 
     def validate_following(self, data):
