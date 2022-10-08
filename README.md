@@ -1,8 +1,8 @@
 # API final Yatube
 ***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Описание</summary>
 
-## Описание
-***
 #### В проекте API Yatube реализована возможность пользоваться функционалом сайта Yatube без посещения самого сайта.
 
 ### Через этот API Вы сможете:
@@ -13,10 +13,32 @@
 * Создавать, удалять и редактировать собственные комментарии.
 * Подписываться на авторов постов.
 
-#### Можно обратиться к документации по [ссылке](http://127.0.0.1:8000/redoc/) после запуска проекта.
+</details>
 
-## Установка
 ***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Технологии</summary>
+
+* Python 3.9.6
+* Django 2.2.16
+* djangorestframework 3.12.4
+
+С полным списком технологий можно ознакомиться в файле ```requirements.txt```
+
+</details>
+
+***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Документация</summary>
+
+С документацией проекта можно ознакомиться по [ссылке](http://127.0.0.1:8000/redoc/) после запуска проекта.
+
+</details>
+
+***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Запуск проекта</summary>
+
 ### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -61,7 +83,12 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-## Примеры
+</details>
+
+***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Примеры получения API</summary>
+
 ___
 ### Регистрация
 Для получения токена отправляем POST-запрос с эндпоинтом ```api/v1/jwt/create/```, передав в него ```username``` и ```password```.
@@ -74,6 +101,14 @@ ___
 Для создания поста нужно отправить POST-запрос с эндпоинтом ```api/v1/posts/```, передав в него обязательное поле ```text```.
 Так же в заголовок запроса нужно передать ```Authorization```:```Bearer <token>```
 
-## Автор
+</details>
+
+***
+<details>
+    <summary style="font-size: 16pt; font-weight: bold">Автор</summary>
 
 [Роман Евстафьев](https://github.com/GhoulNEC)
+
+</details>
+
+***
